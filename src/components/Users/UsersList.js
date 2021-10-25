@@ -6,7 +6,7 @@ import classes from './UsersList.module.css';
 const UsersList = (props) => {
   const listUsers = props.users.map((user) => {
     return (
-      <li key={user.name}>
+      <li key={user.id}>
         {user.name} ({user.age} years old)
       </li>
     );
